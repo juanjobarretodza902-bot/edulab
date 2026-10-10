@@ -1,0 +1,2316 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>EduLab | Aprende. Experimenta. Avanza.</title>
+
+    <meta
+        name="description"
+        content="EduLab es una plataforma educativa interactiva de Matemáticas y Física basada en el ODS 4: Educación de Calidad."
+    >
+
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+
+    <!-- =========================================
+         BARRA LATERAL
+    ========================================== -->
+
+    <aside class="sidebar" id="sidebar">
+
+        <div class="logo">
+            <div class="logo-icon">E</div>
+
+            <div class="logo-text">
+                <strong>Edu<span>Lab</span></strong>
+                <small>Educación interactiva</small>
+            </div>
+        </div>
+
+        <nav class="main-nav">
+
+            <button class="nav-item active" data-section="inicio">
+                <span class="nav-icon">🏠</span>
+                <span>Inicio</span>
+            </button>
+
+            <button class="nav-item" data-section="planes">
+                <span class="nav-icon">🗺️</span>
+                <span>Planes de estudio</span>
+            </button>
+
+            <button class="nav-item" data-section="aprender">
+                <span class="nav-icon">📚</span>
+                <span>Aprender</span>
+            </button>
+
+            <button class="nav-item" data-section="laboratorio">
+                <span class="nav-icon">🧪</span>
+                <span>Laboratorio</span>
+            </button>
+
+            <button class="nav-item" data-section="juegos">
+                <span class="nav-icon">🎮</span>
+                <span>Juegos</span>
+            </button>
+
+            <button class="nav-item" data-section="retos">
+                <span class="nav-icon">🏆</span>
+                <span>Retos</span>
+            </button>
+
+            <button class="nav-item" data-section="progreso">
+                <span class="nav-icon">📈</span>
+                <span>Mi progreso</span>
+            </button>
+
+            <button class="nav-item" data-section="ods">
+                <span class="nav-icon">🌎</span>
+                <span>ODS 4</span>
+            </button>
+
+        </nav>
+
+        <!-- TARJETA ODS -->
+
+        <div class="sidebar-ods">
+
+            <div class="ods-icon">🎓</div>
+
+            <div>
+                <strong>ODS 4</strong>
+                <p>Educación de calidad para todos.</p>
+            </div>
+
+        </div>
+
+        <div class="sidebar-footer">
+            <span>EduLab</span>
+            <span>•</span>
+            <span>ODS 4</span>
+        </div>
+
+    </aside>
+
+
+    <!-- =========================================
+         CONTENIDO PRINCIPAL
+    ========================================== -->
+
+    <main class="main-content">
+
+        <!-- HEADER -->
+
+        <header class="topbar">
+
+            <button class="menu-button" id="menuButton">
+                ☰
+            </button>
+
+            <div class="breadcrumb">
+                <span>EduLab</span>
+                <span>/</span>
+                <strong id="currentPage">Inicio</strong>
+            </div>
+
+            <div class="topbar-actions">
+
+                <button class="icon-button" id="themeButton" title="Cambiar tema">
+                    ☀️
+                </button>
+
+                <div class="points-display">
+                    ⭐
+                    <strong id="points">0</strong>
+                    <span>pts</span>
+                </div>
+
+                <div class="student-avatar">
+                    JJ
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- =========================================
+             SECCIÓN: INICIO
+        ========================================== -->
+
+        <section class="page-section active" id="inicio">
+
+            <div class="welcome-section">
+
+                <div class="welcome-text">
+
+                    <span class="section-tag">
+                        👋 Bienvenido a EduLab
+                    </span>
+
+                    <h1>
+                        Aprende.<br>
+                        <span>Experimenta.</span><br>
+                        Avanza.
+                    </h1>
+
+                    <p>
+                        Una forma diferente de aprender Matemáticas y Física
+                        mediante experiencias interactivas, juegos,
+                        experimentos y retos.
+                    </p>
+
+                    <div class="welcome-buttons">
+
+                        <button
+                            class="primary-button"
+                            data-go-section="planes"
+                        >
+                            Comenzar a aprender →
+                        </button>
+
+                        <button
+                            class="secondary-button"
+                            data-go-section="ods"
+                        >
+                            Conocer el ODS 4
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <div class="welcome-visual">
+
+                    <div class="orbit orbit-one"></div>
+                    <div class="orbit orbit-two"></div>
+
+                    <div class="science-card">
+
+                        <div class="science-symbol">∑</div>
+
+                        <div class="floating-formula formula-one">
+                            F = ma
+                        </div>
+
+                        <div class="floating-formula formula-two">
+                            y = 2x + 3
+                        </div>
+
+                        <div class="floating-formula formula-three">
+                            v = d / t
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- ESTADÍSTICAS -->
+
+            <div class="stats-grid">
+
+                <div class="stat-card">
+
+                    <div class="stat-icon blue">📚</div>
+
+                    <div>
+                        <span>Lecciones</span>
+                        <strong id="lessonsCompleted">0 / 12</strong>
+                    </div>
+
+                </div>
+
+                <div class="stat-card">
+
+                    <div class="stat-icon purple">🧪</div>
+
+                    <div>
+                        <span>Experimentos</span>
+                        <strong id="experimentsCompleted">0 / 6</strong>
+                    </div>
+
+                </div>
+
+                <div class="stat-card">
+
+                    <div class="stat-icon orange">🎮</div>
+
+                    <div>
+                        <span>Juegos</span>
+                        <strong id="gamesCompleted">0 / 4</strong>
+                    </div>
+
+                </div>
+
+                <div class="stat-card">
+
+                    <div class="stat-icon green">🏆</div>
+
+                    <div>
+                        <span>Retos</span>
+                        <strong id="challengesCompleted">0 / 5</strong>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- CONTINUAR APRENDIENDO -->
+
+            <div class="content-grid">
+
+                <div class="content-card continue-card">
+
+                    <div class="card-heading">
+
+                        <div>
+                            <span class="mini-label">TU APRENDIZAJE</span>
+                            <h2>Continúa donde quedaste</h2>
+                        </div>
+
+                        <span class="card-icon">🚀</span>
+
+                    </div>
+
+                    <div class="lesson-preview">
+
+                        <div class="subject-icon physics">
+                            ⚡
+                        </div>
+
+                        <div class="lesson-info">
+
+                            <span>Física • Nivel básico</span>
+
+                            <h3>
+                                Movimiento y velocidad
+                            </h3>
+
+                            <div class="progress-bar">
+                                <div
+                                    class="progress-fill"
+                                    id="homeProgress"
+                                    style="width: 0%;">
+                                </div>
+                            </div>
+
+                            <small id="homeProgressText">
+                                0% completado
+                            </small>
+
+                        </div>
+
+                        <button
+                            class="small-button"
+                            data-go-section="aprender"
+                        >
+                            Continuar
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- META DEL DÍA -->
+
+                <div class="content-card daily-goal">
+
+                    <div class="card-heading">
+
+                        <div>
+                            <span class="mini-label">META DEL DÍA</span>
+                            <h2>Tu progreso</h2>
+                        </div>
+
+                        <span class="card-icon">🎯</span>
+
+                    </div>
+
+                    <div class="goal-circle">
+
+                        <div class="circle-progress">
+                            <span id="dailyPercentage">0%</span>
+                        </div>
+
+                    </div>
+
+                    <p>
+                        Completa actividades para alcanzar tu meta diaria.
+                    </p>
+
+                    <button
+                        class="secondary-button full-button"
+                        data-go-section="progreso"
+                    >
+                        Ver mi progreso
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- MATERIAS -->
+
+            <div class="section-heading">
+
+                <div>
+                    <span class="mini-label">MATERIAS</span>
+                    <h2>Elige qué quieres aprender</h2>
+                </div>
+
+                <span class="heading-description">
+                    Aprende a tu propio ritmo
+                </span>
+
+            </div>
+
+            <div class="subject-grid">
+
+                <!-- MATEMÁTICAS -->
+
+                <article class="subject-card math-card">
+
+                    <div class="subject-top">
+
+                        <div class="big-subject-icon">
+                            ∑
+                        </div>
+
+                        <span class="level-badge">
+                            Nivel básico
+                        </span>
+
+                    </div>
+
+                    <h3>Matemáticas</h3>
+
+                    <p>
+                        Aprende operaciones, álgebra, ecuaciones,
+                        funciones, geometría y estadística.
+                    </p>
+
+                    <div class="subject-bottom">
+
+                        <span>
+                            📚 6 temas
+                        </span>
+
+                        <button
+                            class="arrow-button"
+                            data-subject="matematicas"
+                        >
+                            →
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- FÍSICA -->
+
+                <article class="subject-card physics-card">
+
+                    <div class="subject-top">
+
+                        <div class="big-subject-icon">
+                            ⚡
+                        </div>
+
+                        <span class="level-badge">
+                            Nivel básico
+                        </span>
+
+                    </div>
+
+                    <h3>Física</h3>
+
+                    <p>
+                        Descubre el movimiento, las fuerzas,
+                        la gravedad, la energía y mucho más.
+                    </p>
+
+                    <div class="subject-bottom">
+
+                        <span>
+                            🧪 6 temas
+                        </span>
+
+                        <button
+                            class="arrow-button"
+                            data-subject="fisica"
+                        >
+                            →
+                        </button>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+
+            <!-- CARACTERÍSTICAS -->
+
+            <div class="section-heading">
+
+                <div>
+                    <span class="mini-label">¿CÓMO FUNCIONA?</span>
+                    <h2>Aprender es más que responder preguntas</h2>
+                </div>
+
+            </div>
+
+            <div class="features-grid">
+
+                <div class="feature-card">
+
+                    <div class="feature-icon">📖</div>
+
+                    <h3>Aprende</h3>
+
+                    <p>
+                        Explicaciones sencillas, ejemplos y fórmulas
+                        para comprender cada tema.
+                    </p>
+
+                </div>
+
+                <div class="feature-card">
+
+                    <div class="feature-icon">🧪</div>
+
+                    <h3>Experimenta</h3>
+
+                    <p>
+                        Cambia valores y observa cómo funcionan
+                        los conceptos en tiempo real.
+                    </p>
+
+                </div>
+
+                <div class="feature-card">
+
+                    <div class="feature-icon">🎮</div>
+
+                    <h3>Juega</h3>
+
+                    <p>
+                        Aprende mientras juegas con actividades
+                        relacionadas con Matemáticas y Física.
+                    </p>
+
+                </div>
+
+                <div class="feature-card">
+
+                    <div class="feature-icon">🏆</div>
+
+                    <h3>Supera retos</h3>
+
+                    <p>
+                        Pon a prueba lo aprendido y gana puntos,
+                        logros y experiencia.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================================
+             SECCIÓN: PLANES DE ESTUDIO
+        ========================================== -->
+
+        <section class="page-section" id="planes">
+
+            <div class="page-header">
+
+                <span class="section-tag">
+                    🗺️ Rutas de aprendizaje
+                </span>
+
+                <h1>Planes de estudio</h1>
+
+                <p>
+                    Sigue una ruta organizada para avanzar paso a paso
+                    y aprender sin perderte.
+                </p>
+
+            </div>
+
+
+            <div class="plan-selector">
+
+                <button class="plan-tab active" data-plan="matematicas">
+                    ∑ Matemáticas
+                </button>
+
+                <button class="plan-tab" data-plan="fisica">
+                    ⚡ Física
+                </button>
+
+            </div>
+
+
+            <!-- PLAN MATEMÁTICAS -->
+
+            <div class="study-plan active" id="plan-matematicas">
+
+                <div class="plan-header-card">
+
+                    <div class="plan-icon math-icon">
+                        ∑
+                    </div>
+
+                    <div>
+                        <span>PLAN DE 7 DÍAS</span>
+                        <h2>Fundamentos de Matemáticas</h2>
+                        <p>
+                            Construye una base sólida y avanza
+                            paso a paso.
+                        </p>
+                    </div>
+
+                    <div class="plan-progress">
+
+                        <strong id="mathPlanPercentage">
+                            0%
+                        </strong>
+
+                        <span>completado</span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="timeline">
+
+                    <div class="timeline-item">
+                        <span class="day-number">01</span>
+                        <div>
+                            <span>Día 1</span>
+                            <h3>Operaciones básicas</h3>
+                            <p>Suma, resta, multiplicación y división.</p>
+                        </div>
+                        <button class="lesson-start" data-lesson="operaciones">
+                            Empezar
+                        </button>
+                    </div>
+
+                    <div class="timeline-item">
+                        <span class="day-number">02</span>
+                        <div>
+                            <span>Día 2</span>
+                            <h3>Álgebra</h3>
+                            <p>Variables, expresiones y términos.</p>
+                        </div>
+                        <button class="lesson-start" data-lesson="algebra">
+                            Empezar
+                        </button>
+                    </div>
+
+                    <div class="timeline-item">
+                        <span class="day-number">03</span>
+                        <div>
+                            <span>Día 3</span>
+                            <h3>Ecuaciones</h3>
+                            <p>Aprende a encontrar el valor desconocido.</p>
+                        </div>
+                        <button class="lesson-start" data-lesson="ecuaciones">
+                            Empezar
+                        </button>
+                    </div>
+
+                    <div class="timeline-item">
+                        <span class="day-number">04</span>
+                        <div>
+                            <span>Día 4</span>
+                            <h3>Funciones</h3>
+                            <p>Comprende cómo se relacionan dos variables.</p>
+                        </div>
+                        <button class="lesson-start" data-lesson="funciones">
+                            Empezar
+                        </button>
+                    </div>
+
+                    <div class="timeline-item">
+                        <span class="day-number">05</span>
+                        <div>
+                            <span>Día 5</span>
+                            <h3>Geometría</h3>
+                            <p>Áreas, perímetros y figuras.</p>
+                        </div>
+                        <button class="lesson-start" data-lesson="geometria">
+                            Empezar
+                        </button>
+                    </div>
+
+                    <div class="timeline-item">
+                        <span class="day-number">06</span>
+                        <div>
+                            <span>Día 6</span>
+                            <h3>Estadística</h3>
+                            <p>Datos, promedios y gráficos.</p>
+                        </div>
+                        <button class="lesson-start" data-lesson="estadistica">
+                            Empezar
+                        </button>
+                    </div>
+
+                    <div class="timeline-item final-item">
+                        <span class="day-number">07</span>
+                        <div>
+                            <span>Día 7</span>
+                            <h3>🏆 Reto final</h3>
+                            <p>Demuestra todo lo que aprendiste.</p>
+                        </div>
+                        <button class="lesson-start" data-lesson="reto-matematicas">
+                            Desafío
+                        </button>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- PLAN FÍSICA -->
+
+            <div class="study-plan" id="plan-fisica">
+
+                <div class="plan-header-card">
+
+                    <div class="plan-icon physics-icon">
+                        ⚡
+                    </div>
+
+                    <div>
+                        <span>PLAN DE 6 DÍAS</span>
+                        <h2>Fundamentos de Física</h2>
+                        <p>
+                            Entiende cómo funcionan el movimiento,
+                            las fuerzas y la energía.
+                        </p>
+                    </div>
+
+                    <div class="plan-progress">
+
+                        <strong id="physicsPlanPercentage">
+                            0%
+                        </strong>
+
+                        <span>completado</span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="timeline">
+
+                    <div class="timeline-item">
+                        <span class="day-number">01</span>
+                        <div>
+                            <span>Día 1</span>
+                            <h3>Movimiento y velocidad</h3>
+                            <p>Distancia, tiempo y velocidad.</p>
+                        </div>
+                        <button class="lesson-start" data-lesson="movimiento">
+                            Empezar
+                        </button>
+                    </div>
+
+                    <div class="timeline-item">
+                        <span class="day-number">02</span>
+                        <div>
+                            <span>Día 2</span>
+                            <h3>Fuerza y aceleración</h3>
+                            <p>Comprende F = m · a.</p>
+                        </div>
+                        <button class="lesson-start" data-lesson="fuerza">
+                            Empezar
+                        </button>
+                    </div>
+
+                    <div class="timeline-item">
+                        <span class="day-number">03</span>
+                        <div>
+                            <span>Día 3</span>
+                            <h3>Gravedad</h3>
+                            <p>Descubre por qué los objetos caen.</p>
+                        </div>
+                        <button class="lesson-start" data-lesson="gravedad">
+                            Empezar
+                        </button>
+                    </div>
+
+                    <div class="timeline-item">
+                        <span class="day-number">04</span>
+                        <div>
+                            <span>Día 4</span>
+                            <h3>Energía</h3>
+                            <p>Tipos y transformaciones de energía.</p>
+                        </div>
+                        <button class="lesson-start" data-lesson="energia">
+                            Empezar
+                        </button>
+                    </div>
+
+                    <div class="timeline-item">
+                        <span class="day-number">05</span>
+                        <div>
+                            <span>Día 5</span>
+                            <h3>Trabajo y potencia</h3>
+                            <p>Cómo se relacionan fuerza, distancia y tiempo.</p>
+                        </div>
+                        <button class="lesson-start" data-lesson="trabajo">
+                            Empezar
+                        </button>
+                    </div>
+
+                    <div class="timeline-item final-item">
+                        <span class="day-number">06</span>
+                        <div>
+                            <span>Día 6</span>
+                            <h3>🏆 Reto final</h3>
+                            <p>Aplica todo lo aprendido.</p>
+                        </div>
+                        <button class="lesson-start" data-lesson="reto-fisica">
+                            Desafío
+                        </button>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================================
+             SECCIÓN: APRENDER
+        ========================================== -->
+
+        <section class="page-section" id="aprender">
+
+            <div class="page-header">
+
+                <span class="section-tag">
+                    📚 Biblioteca de aprendizaje
+                </span>
+
+                <h1>Aprender</h1>
+
+                <p>
+                    Explora explicaciones, ejemplos, fórmulas y consejos
+                    para comprender cada tema.
+                </p>
+
+            </div>
+
+
+            <div class="learning-filter">
+
+                <button class="filter-button active" data-filter="todos">
+                    Todos
+                </button>
+
+                <button class="filter-button" data-filter="matematicas">
+                    ∑ Matemáticas
+                </button>
+
+                <button class="filter-button" data-filter="fisica">
+                    ⚡ Física
+                </button>
+
+            </div>
+
+
+            <div class="lesson-grid">
+
+                <!-- LECCIÓN 1 -->
+
+                <article
+                    class="lesson-card"
+                    data-category="fisica"
+                    data-lesson-card="movimiento"
+                >
+
+                    <div class="lesson-card-top physics-bg">
+                        <span class="lesson-subject">FÍSICA</span>
+                        <span class="lesson-symbol">v</span>
+                    </div>
+
+                    <div class="lesson-card-body">
+
+                        <span class="difficulty">🟢 Básico</span>
+
+                        <h3>Movimiento y velocidad</h3>
+
+                        <p>
+                            Aprende cómo calcular la velocidad
+                            usando distancia y tiempo.
+                        </p>
+
+                        <div class="lesson-formula">
+                            v = d / t
+                        </div>
+
+                        <button
+                            class="primary-button lesson-button"
+                            data-open-lesson="movimiento"
+                        >
+                            Estudiar tema
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- LECCIÓN 2 -->
+
+                <article
+                    class="lesson-card"
+                    data-category="fisica"
+                    data-lesson-card="fuerza"
+                >
+
+                    <div class="lesson-card-top force-bg">
+                        <span class="lesson-subject">FÍSICA</span>
+                        <span class="lesson-symbol">F</span>
+                    </div>
+
+                    <div class="lesson-card-body">
+
+                        <span class="difficulty">🟢 Básico</span>
+
+                        <h3>Fuerza y aceleración</h3>
+
+                        <p>
+                            Descubre cómo la masa y la aceleración
+                            producen una fuerza.
+                        </p>
+
+                        <div class="lesson-formula">
+                            F = m · a
+                        </div>
+
+                        <button
+                            class="primary-button lesson-button"
+                            data-open-lesson="fuerza"
+                        >
+                            Estudiar tema
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- LECCIÓN 3 -->
+
+                <article
+                    class="lesson-card"
+                    data-category="fisica"
+                    data-lesson-card="energia"
+                >
+
+                    <div class="lesson-card-top energy-bg">
+                        <span class="lesson-subject">FÍSICA</span>
+                        <span class="lesson-symbol">E</span>
+                    </div>
+
+                    <div class="lesson-card-body">
+
+                        <span class="difficulty">🟡 Intermedio</span>
+
+                        <h3>Energía</h3>
+
+                        <p>
+                            Aprende cómo la energía puede transformarse
+                            de una forma a otra.
+                        </p>
+
+                        <div class="lesson-formula">
+                            E = energía
+                        </div>
+
+                        <button
+                            class="primary-button lesson-button"
+                            data-open-lesson="energia"
+                        >
+                            Estudiar tema
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- LECCIÓN 4 -->
+
+                <article
+                    class="lesson-card"
+                    data-category="matematicas"
+                    data-lesson-card="ecuaciones"
+                >
+
+                    <div class="lesson-card-top math-bg">
+                        <span class="lesson-subject">MATEMÁTICAS</span>
+                        <span class="lesson-symbol">x</span>
+                    </div>
+
+                    <div class="lesson-card-body">
+
+                        <span class="difficulty">🟢 Básico</span>
+
+                        <h3>Ecuaciones</h3>
+
+                        <p>
+                            Aprende a encontrar el valor de una
+                            incógnita paso a paso.
+                        </p>
+
+                        <div class="lesson-formula">
+                            x + 5 = 12
+                        </div>
+
+                        <button
+                            class="primary-button lesson-button"
+                            data-open-lesson="ecuaciones"
+                        >
+                            Estudiar tema
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- LECCIÓN 5 -->
+
+                <article
+                    class="lesson-card"
+                    data-category="matematicas"
+                    data-lesson-card="funciones"
+                >
+
+                    <div class="lesson-card-top function-bg">
+                        <span class="lesson-subject">MATEMÁTICAS</span>
+                        <span class="lesson-symbol">f(x)</span>
+                    </div>
+
+                    <div class="lesson-card-body">
+
+                        <span class="difficulty">🟡 Intermedio</span>
+
+                        <h3>Funciones</h3>
+
+                        <p>
+                            Comprende la relación entre variables
+                            mediante funciones.
+                        </p>
+
+                        <div class="lesson-formula">
+                            y = 2x + 3
+                        </div>
+
+                        <button
+                            class="primary-button lesson-button"
+                            data-open-lesson="funciones"
+                        >
+                            Estudiar tema
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- LECCIÓN 6 -->
+
+                <article
+                    class="lesson-card"
+                    data-category="matematicas"
+                    data-lesson-card="estadistica"
+                >
+
+                    <div class="lesson-card-top stats-bg">
+                        <span class="lesson-subject">MATEMÁTICAS</span>
+                        <span class="lesson-symbol">%</span>
+                    </div>
+
+                    <div class="lesson-card-body">
+
+                        <span class="difficulty">🟡 Intermedio</span>
+
+                        <h3>Estadística</h3>
+
+                        <p>
+                            Aprende a interpretar datos, promedios
+                            y representaciones gráficas.
+                        </p>
+
+                        <div class="lesson-formula">
+                            Promedio = Σx / n
+                        </div>
+
+                        <button
+                            class="primary-button lesson-button"
+                            data-open-lesson="estadistica"
+                        >
+                            Estudiar tema
+                        </button>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================================
+             SECCIÓN: LABORATORIO
+        ========================================== -->
+
+        <section class="page-section" id="laboratorio">
+
+            <div class="page-header">
+
+                <span class="section-tag">
+                    🧪 Aprende haciendo
+                </span>
+
+                <h1>Laboratorio interactivo</h1>
+
+                <p>
+                    Cambia los valores y observa cómo las matemáticas
+                    y la física funcionan en tiempo real.
+                </p>
+
+            </div>
+
+
+            <div class="lab-tabs">
+
+                <button class="lab-tab active" data-lab="velocidad">
+                    ⚡ Velocidad
+                </button>
+
+                <button class="lab-tab" data-lab="funcion">
+                    📈 Función
+                </button>
+
+                <button class="lab-tab" data-lab="fuerza">
+                    🏋️ Fuerza
+                </button>
+
+            </div>
+
+
+            <!-- LABORATORIO VELOCIDAD -->
+
+            <div class="lab-panel active" id="lab-velocidad">
+
+                <div class="lab-info">
+
+                    <span class="mini-label">EXPERIMENTO 01</span>
+
+                    <h2>Controla la velocidad</h2>
+
+                    <p>
+                        Modifica la distancia y el tiempo para descubrir
+                        cómo cambia la velocidad.
+                    </p>
+
+                    <div class="formula-box">
+                        <span>Fórmula</span>
+                        <strong>v = d ÷ t</strong>
+                    </div>
+
+                    <div class="lab-controls">
+
+                        <label>
+                            Distancia:
+                            <strong>
+                                <span id="distanceValue">100</span> m
+                            </strong>
+                        </label>
+
+                        <input
+                            type="range"
+                            id="distanceSlider"
+                            min="10"
+                            max="500"
+                            value="100"
+                        >
+
+                        <label>
+                            Tiempo:
+                            <strong>
+                                <span id="timeValue">10</span> s
+                            </strong>
+                        </label>
+
+                        <input
+                            type="range"
+                            id="timeSlider"
+                            min="1"
+                            max="30"
+                            value="10"
+                        >
+
+                    </div>
+
+                    <div class="result-box">
+
+                        <span>Velocidad</span>
+
+                        <strong>
+                            <span id="velocityResult">10</span>
+                            m/s
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+                <div class="lab-visual">
+
+                    <div class="track">
+
+                        <div class="finish-line"></div>
+
+                        <div
+                            class="lab-car"
+                            id="labCar"
+                        >
+                            🚗
+                        </div>
+
+                    </div>
+
+                    <div class="lab-distance-label">
+                        Inicio
+                        <span>Distancia recorrida</span>
+                        Final
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- LABORATORIO FUNCIÓN -->
+
+            <div class="lab-panel" id="lab-funcion">
+
+                <div class="lab-info">
+
+                    <span class="mini-label">EXPERIMENTO 02</span>
+
+                    <h2>Explora una función</h2>
+
+                    <p>
+                        Cambia el valor de X y observa cómo cambia Y
+                        en la función y = 2x + 3.
+                    </p>
+
+                    <div class="formula-box">
+                        <span>Función</span>
+                        <strong>y = 2x + 3</strong>
+                    </div>
+
+                    <div class="lab-controls">
+
+                        <label>
+                            Valor de X:
+                            <strong>
+                                <span id="xValue">5</span>
+                            </strong>
+                        </label>
+
+                        <input
+                            type="range"
+                            id="xSlider"
+                            min="-10"
+                            max="10"
+                            value="5"
+                        >
+
+                    </div>
+
+                    <div class="result-box">
+
+                        <span>Resultado de Y</span>
+
+                        <strong id="yResult">
+                            13
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+                <div class="function-visual">
+
+                    <div class="coordinate-grid">
+
+                        <div class="axis-x"></div>
+                        <div class="axis-y"></div>
+
+                        <div
+                            class="function-point"
+                            id="functionPoint"
+                        ></div>
+
+                    </div>
+
+                    <div class="graph-values">
+
+                        <span>
+                            X = <strong id="graphX">5</strong>
+                        </span>
+
+                        <span>
+                            Y = <strong id="graphY">13</strong>
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- LABORATORIO FUERZA -->
+
+            <div class="lab-panel" id="lab-fuerza">
+
+                <div class="lab-info">
+
+                    <span class="mini-label">EXPERIMENTO 03</span>
+
+                    <h2>Descubre la fuerza</h2>
+
+                    <p>
+                        Cambia la masa y la aceleración para descubrir
+                        cómo cambia la fuerza.
+                    </p>
+
+                    <div class="formula-box">
+                        <span>Fórmula</span>
+                        <strong>F = m × a</strong>
+                    </div>
+
+                    <div class="lab-controls">
+
+                        <label>
+                            Masa:
+                            <strong>
+                                <span id="massValue">10</span> kg
+                            </strong>
+                        </label>
+
+                        <input
+                            type="range"
+                            id="massSlider"
+                            min="1"
+                            max="50"
+                            value="10"
+                        >
+
+                        <label>
+                            Aceleración:
+                            <strong>
+                                <span id="accelerationValue">5</span> m/s²
+                            </strong>
+                        </label>
+
+                        <input
+                            type="range"
+                            id="accelerationSlider"
+                            min="1"
+                            max="20"
+                            value="5"
+                        >
+
+                    </div>
+
+                    <div class="result-box">
+
+                        <span>Fuerza</span>
+
+                        <strong>
+                            <span id="forceResult">50</span>
+                            N
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+                <div class="force-visual">
+
+                    <div class="force-arrow">
+                        →
+                    </div>
+
+                    <div class="force-object">
+                        📦
+                    </div>
+
+                    <span>
+                        F = m × a
+                    </span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================================
+             SECCIÓN: JUEGOS
+        ========================================== -->
+
+        <section class="page-section" id="juegos">
+
+            <div class="page-header">
+
+                <span class="section-tag">
+                    🎮 Aprende jugando
+                </span>
+
+                <h1>Juegos educativos</h1>
+
+                <p>
+                    Pon tus conocimientos en práctica mientras
+                    completas diferentes misiones.
+                </p>
+
+            </div>
+
+
+            <div class="games-grid">
+
+                <article class="game-card">
+
+                    <div class="game-image speed-game">
+                        ⚡
+                    </div>
+
+                    <div class="game-content">
+
+                        <span class="game-category">
+                            FÍSICA
+                        </span>
+
+                        <h2>Atrapa la velocidad</h2>
+
+                        <p>
+                            Calcula la velocidad correcta para
+                            completar la misión.
+                        </p>
+
+                        <div class="game-meta">
+                            <span>⭐ 100 pts</span>
+                            <span>🟢 Fácil</span>
+                        </div>
+
+                        <button
+                            class="primary-button game-start"
+                            data-game="velocidad"
+                        >
+                            Jugar ahora →
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <article class="game-card">
+
+                    <div class="game-image math-game">
+                        ∑
+                    </div>
+
+                    <div class="game-content">
+
+                        <span class="game-category">
+                            MATEMÁTICAS
+                        </span>
+
+                        <h2>Misión matemática</h2>
+
+                        <p>
+                            Resuelve operaciones antes de que
+                            se acabe el tiempo.
+                        </p>
+
+                        <div class="game-meta">
+                            <span>⭐ 150 pts</span>
+                            <span>🟡 Medio</span>
+                        </div>
+
+                        <button
+                            class="primary-button game-start"
+                            data-game="matematicas"
+                        >
+                            Jugar ahora →
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <article class="game-card">
+
+                    <div class="game-image space-game">
+                        🚀
+                    </div>
+
+                    <div class="game-content">
+
+                        <span class="game-category">
+                            FÍSICA
+                        </span>
+
+                        <h2>Misión espacial</h2>
+
+                        <p>
+                            Usa conceptos de física para completar
+                            tu viaje por el espacio.
+                        </p>
+
+                        <div class="game-meta">
+                            <span>⭐ 200 pts</span>
+                            <span>🔴 Difícil</span>
+                        </div>
+
+                        <button
+                            class="primary-button game-start"
+                            data-game="espacio"
+                        >
+                            Jugar ahora →
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <article class="game-card">
+
+                    <div class="game-image geometry-game">
+                        📐
+                    </div>
+
+                    <div class="game-content">
+
+                        <span class="game-category">
+                            MATEMÁTICAS
+                        </span>
+
+                        <h2>Desafío geométrico</h2>
+
+                        <p>
+                            Encuentra áreas, perímetros y resuelve
+                            problemas de geometría.
+                        </p>
+
+                        <div class="game-meta">
+                            <span>⭐ 150 pts</span>
+                            <span>🟡 Medio</span>
+                        </div>
+
+                        <button
+                            class="primary-button game-start"
+                            data-game="geometria"
+                        >
+                            Jugar ahora →
+                        </button>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================================
+             SECCIÓN: RETOS
+        ========================================== -->
+
+        <section class="page-section" id="retos">
+
+            <div class="page-header">
+
+                <span class="section-tag">
+                    🏆 Pon a prueba lo aprendido
+                </span>
+
+                <h1>Retos</h1>
+
+                <p>
+                    Demuestra tus conocimientos resolviendo
+                    situaciones y problemas.
+                </p>
+
+            </div>
+
+
+            <div class="challenge-banner">
+
+                <div>
+
+                    <span>RETO DESTACADO</span>
+
+                    <h2>
+                        ¿Puedes convertirte en
+                        <strong>Maestro EduLab?</strong>
+                    </h2>
+
+                    <p>
+                        Completa 5 retos y demuestra todo lo aprendido.
+                    </p>
+
+                </div>
+
+                <div class="challenge-trophy">
+                    🏆
+                </div>
+
+            </div>
+
+
+            <div class="challenge-grid">
+
+                <article class="challenge-card">
+
+                    <div class="challenge-number">
+                        01
+                    </div>
+
+                    <div>
+                        <span>FÍSICA</span>
+                        <h3>El movimiento</h3>
+                        <p>
+                            Calcula velocidades en diferentes situaciones.
+                        </p>
+                    </div>
+
+                    <button
+                        class="challenge-button"
+                        data-challenge="movimiento"
+                    >
+                        Comenzar
+                    </button>
+
+                </article>
+
+
+                <article class="challenge-card">
+
+                    <div class="challenge-number">
+                        02
+                    </div>
+
+                    <div>
+                        <span>MATEMÁTICAS</span>
+                        <h3>Detective de ecuaciones</h3>
+                        <p>
+                            Encuentra las incógnitas escondidas.
+                        </p>
+                    </div>
+
+                    <button
+                        class="challenge-button"
+                        data-challenge="ecuaciones"
+                    >
+                        Comenzar
+                    </button>
+
+                </article>
+
+
+                <article class="challenge-card">
+
+                    <div class="challenge-number">
+                        03
+                    </div>
+
+                    <div>
+                        <span>FÍSICA</span>
+                        <h3>Fuerzas</h3>
+                        <p>
+                            Aplica la segunda ley de Newton.
+                        </p>
+                    </div>
+
+                    <button
+                        class="challenge-button"
+                        data-challenge="fuerza"
+                    >
+                        Comenzar
+                    </button>
+
+                </article>
+
+
+                <article class="challenge-card">
+
+                    <div class="challenge-number">
+                        04
+                    </div>
+
+                    <div>
+                        <span>MATEMÁTICAS</span>
+                        <h3>Funciones</h3>
+                        <p>
+                            Interpreta funciones y sus resultados.
+                        </p>
+                    </div>
+
+                    <button
+                        class="challenge-button"
+                        data-challenge="funciones"
+                    >
+                        Comenzar
+                    </button>
+
+                </article>
+
+
+                <article class="challenge-card">
+
+                    <div class="challenge-number">
+                        05
+                    </div>
+
+                    <div>
+                        <span>MIXTO</span>
+                        <h3>🏆 Gran desafío</h3>
+                        <p>
+                            Combina Matemáticas y Física.
+                        </p>
+                    </div>
+
+                    <button
+                        class="challenge-button"
+                        data-challenge="mixto"
+                    >
+                        Comenzar
+                    </button>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================================
+             SECCIÓN: PROGRESO
+        ========================================== -->
+
+        <section class="page-section" id="progreso">
+
+            <div class="page-header">
+
+                <span class="section-tag">
+                    📈 Tu aprendizaje
+                </span>
+
+                <h1>Mi progreso</h1>
+
+                <p>
+                    Mira cuánto has avanzado y los logros que has conseguido.
+                </p>
+
+            </div>
+
+
+            <div class="progress-overview">
+
+                <div class="big-progress-card">
+
+                    <div class="progress-ring">
+
+                        <div class="progress-ring-inner">
+
+                            <strong id="totalProgress">
+                                0%
+                            </strong>
+
+                            <span>completado</span>
+
+                        </div>
+
+                    </div>
+
+                    <div>
+
+                        <span class="mini-label">
+                            PROGRESO GENERAL
+                        </span>
+
+                        <h2>
+                            ¡Sigue avanzando!
+                        </h2>
+
+                        <p>
+                            Cada lección y experimento te acerca
+                            un paso más a tu objetivo.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="points-card">
+
+                    <span class="mini-label">
+                        PUNTOS TOTALES
+                    </span>
+
+                    <strong id="totalPoints">
+                        0
+                    </strong>
+
+                    <span>⭐ puntos</span>
+
+                </div>
+
+            </div>
+
+
+            <div class="progress-columns">
+
+                <div class="progress-detail-card">
+
+                    <div class="card-heading">
+                        <div>
+                            <span class="mini-label">ACTIVIDADES</span>
+                            <h2>Tu avance</h2>
+                        </div>
+                    </div>
+
+                    <div class="progress-item">
+
+                        <div>
+                            <span>📚 Lecciones</span>
+                            <strong id="progressLessons">
+                                0 / 12
+                            </strong>
+                        </div>
+
+                        <div class="progress-bar">
+                            <div
+                                class="progress-fill"
+                                id="lessonsProgressBar"
+                                style="width: 0%;"
+                            ></div>
+                        </div>
+
+                    </div>
+
+                    <div class="progress-item">
+
+                        <div>
+                            <span>🧪 Experimentos</span>
+                            <strong id="progressExperiments">
+                                0 / 6
+                            </strong>
+                        </div>
+
+                        <div class="progress-bar">
+                            <div
+                                class="progress-fill"
+                                id="experimentsProgressBar"
+                                style="width: 0%;"
+                            ></div>
+                        </div>
+
+                    </div>
+
+                    <div class="progress-item">
+
+                        <div>
+                            <span>🎮 Juegos</span>
+                            <strong id="progressGames">
+                                0 / 4
+                            </strong>
+                        </div>
+
+                        <div class="progress-bar">
+                            <div
+                                class="progress-fill"
+                                id="gamesProgressBar"
+                                style="width: 0%;"
+                            ></div>
+                        </div>
+
+                    </div>
+
+                    <div class="progress-item">
+
+                        <div>
+                            <span>🏆 Retos</span>
+                            <strong id="progressChallenges">
+                                0 / 5
+                            </strong>
+                        </div>
+
+                        <div class="progress-bar">
+                            <div
+                                class="progress-fill"
+                                id="challengesProgressBar"
+                                style="width: 0%;"
+                            ></div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="achievements-card">
+
+                    <div class="card-heading">
+
+                        <div>
+                            <span class="mini-label">LOGROS</span>
+                            <h2>Tus insignias</h2>
+                        </div>
+
+                    </div>
+
+                    <div class="achievements-grid">
+
+                        <div class="achievement locked">
+                            <span>🏅</span>
+                            <strong>Primer paso</strong>
+                            <small>Completa tu primera lección</small>
+                        </div>
+
+                        <div class="achievement locked">
+                            <span>🔬</span>
+                            <strong>Joven científico</strong>
+                            <small>Completa 5 experimentos</small>
+                        </div>
+
+                        <div class="achievement locked">
+                            <span>🧠</span>
+                            <strong>Mente matemática</strong>
+                            <small>Completa 10 retos</small>
+                        </div>
+
+                        <div class="achievement locked">
+                            <span>⚡</span>
+                            <strong>Maestro de física</strong>
+                            <small>Completa el plan de Física</small>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================================
+             SECCIÓN: ODS 4
+        ========================================== -->
+
+        <section class="page-section" id="ods">
+
+            <div class="ods-hero">
+
+                <div class="ods-number">
+                    4
+                </div>
+
+                <div>
+
+                    <span class="section-tag">
+                        OBJETIVOS DE DESARROLLO SOSTENIBLE
+                    </span>
+
+                    <h1>
+                        Educación de Calidad
+                    </h1>
+
+                    <p>
+                        Garantizar una educación inclusiva, equitativa
+                        y de calidad y promover oportunidades de
+                        aprendizaje durante toda la vida.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="ods-content-grid">
+
+                <div class="ods-explanation">
+
+                    <span class="mini-label">
+                        ¿QUÉ ES EL ODS 4?
+                    </span>
+
+                    <h2>
+                        La educación también puede transformarse
+                        con tecnología.
+                    </h2>
+
+                    <p>
+                        El ODS 4 hace parte de los Objetivos de
+                        Desarrollo Sostenible de las Naciones Unidas.
+                        Busca mejorar el acceso a una educación
+                        de calidad para todas las personas.
+                    </p>
+
+                    <p>
+                        EduLab toma esta idea y la lleva al entorno
+                        digital mediante diferentes formas de
+                        aprendizaje: explicaciones, práctica,
+                        experimentación, juegos y retos.
+                    </p>
+
+                </div>
+
+
+                <div class="ods-principles">
+
+                    <div class="ods-principle">
+
+                        <span>📚</span>
+
+                        <div>
+                            <h3>Aprendizaje accesible</h3>
+                            <p>
+                                Contenido organizado y fácil de entender.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="ods-principle">
+
+                        <span>🧠</span>
+
+                        <div>
+                            <h3>Diferentes formas de aprender</h3>
+                            <p>
+                                Leer, experimentar, jugar y resolver retos.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="ods-principle">
+
+                        <span>💻</span>
+
+                        <div>
+                            <h3>Uso de la tecnología</h3>
+                            <p>
+                                Herramientas digitales para apoyar el aprendizaje.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="ods-principle">
+
+                        <span>🚀</span>
+
+                        <div>
+                            <h3>Aprender al propio ritmo</h3>
+                            <p>
+                                Cada estudiante puede avanzar paso a paso.
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="edu-impact">
+
+                <div class="impact-title">
+
+                    <span class="mini-label">
+                        NUESTRA PROPUESTA
+                    </span>
+
+                    <h2>
+                        ¿Cómo EduLab aporta al ODS 4?
+                    </h2>
+
+                </div>
+
+                <div class="impact-grid">
+
+                    <div class="impact-item">
+                        <strong>01</strong>
+                        <h3>Comprender</h3>
+                        <p>
+                            Explicamos los temas de forma sencilla.
+                        </p>
+                    </div>
+
+                    <div class="impact-item">
+                        <strong>02</strong>
+                        <h3>Experimentar</h3>
+                        <p>
+                            Convertimos conceptos en experiencias.
+                        </p>
+                    </div>
+
+                    <div class="impact-item">
+                        <strong>03</strong>
+                        <h3>Practicar</h3>
+                        <p>
+                            El estudiante aprende haciendo.
+                        </p>
+                    </div>
+
+                    <div class="impact-item">
+                        <strong>04</strong>
+                        <h3>Avanzar</h3>
+                        <p>
+                            El progreso permite saber qué falta por aprender.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================================
+         MODAL PARA LECCIONES
+    ========================================== -->
+
+    <div class="modal-overlay" id="lessonModal">
+
+        <div class="modal">
+
+            <button class="modal-close" id="closeLessonModal">
+                ×
+            </button>
+
+            <span class="section-tag" id="modalSubject">
+                FÍSICA
+            </span>
+
+            <h2 id="modalTitle">
+                Movimiento y velocidad
+            </h2>
+
+            <div class="modal-content">
+
+                <p id="modalExplanation">
+                    La velocidad nos indica qué tan rápido se mueve
+                    un objeto.
+                </p>
+
+                <div class="modal-formula" id="modalFormula">
+                    v = d / t
+                </div>
+
+                <div class="example-box">
+
+                    <strong>💡 Ejemplo</strong>
+
+                    <p id="modalExample">
+                        Si un automóvil recorre 100 metros en 10 segundos,
+                        su velocidad es de 10 m/s.
+                    </p>
+
+                </div>
+
+                <div class="tip-box">
+
+                    <strong>🧠 Consejo</strong>
+
+                    <p id="modalTip">
+                        Recuerda identificar siempre las unidades.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <button
+                class="primary-button full-button"
+                id="completeLessonButton"
+            >
+                Marcar como aprendido ✓
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================================
+         MODAL PARA JUEGOS Y RETOS
+    ========================================== -->
+
+    <div class="modal-overlay" id="gameModal">
+
+        <div class="modal game-modal">
+
+            <button class="modal-close" id="closeGameModal">
+                ×
+            </button>
+
+            <div class="game-modal-header">
+
+                <span class="section-tag" id="gameModalCategory">
+                    FÍSICA
+                </span>
+
+                <h2 id="gameModalTitle">
+                    Atrapa la velocidad
+                </h2>
+
+                <div class="game-score">
+
+                    <span>⭐</span>
+
+                    <strong id="gameScore">
+                        0
+                    </strong>
+
+                    puntos
+
+                </div>
+
+            </div>
+
+            <div id="gameContainer">
+
+                <div class="game-question">
+
+                    <span id="questionNumber">
+                        Pregunta 1
+                    </span>
+
+                    <h3 id="gameQuestion">
+                        ¿Cuál es la velocidad de un objeto
+                        que recorre 100 m en 10 s?
+                    </h3>
+
+                </div>
+
+                <div
+                    class="answer-grid"
+                    id="answerGrid"
+                >
+
+                    <button class="answer-button">
+                        5 m/s
+                    </button>
+
+                    <button class="answer-button">
+                        10 m/s
+                    </button>
+
+                    <button class="answer-button">
+                        20 m/s
+                    </button>
+
+                    <button class="answer-button">
+                        100 m/s
+                    </button>
+
+                </div>
+
+                <div
+                    class="game-feedback"
+                    id="gameFeedback"
+                ></div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================================
+         NOTIFICACIONES
+    ========================================== -->
+
+    <div
+        class="toast"
+        id="toast"
+        role="status"
+        aria-live="polite"
+    >
+        <span id="toastIcon">✓</span>
+
+        <div>
+            <strong id="toastTitle">
+                ¡Bien hecho!
+            </strong>
+
+            <p id="toastMessage">
+                Actividad completada.
+            </p>
+        </div>
+
+    </div>
+
+
+    <!-- =========================================
+         JAVASCRIPT
+    ========================================== -->
+
+    <script src="funcion.js"></script>
+
+</body>
+</html>
